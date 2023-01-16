@@ -3,6 +3,7 @@ package net.rupyber_studios.ancient_ancestors;
 import net.fabricmc.api.ModInitializer;
 import net.rupyber_studios.ancient_ancestors.item.ModItems;
 import net.rupyber_studios.ancient_ancestors.util.ModRegistries;
+import net.rupyber_studios.ancient_ancestors.world.dimenson.ModDimensions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib3.GeckoLib;
@@ -26,6 +27,8 @@ public class AncientAncestors implements ModInitializer {
 		GeckoLib.initialize();
 
 		ModRegistries.registerAttributes();
+
+		ModDimensions.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}
