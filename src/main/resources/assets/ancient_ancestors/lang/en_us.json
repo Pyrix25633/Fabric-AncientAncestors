@@ -1,10 +1,6 @@
 {
-  "entity.minecraft_legends.plank_golem": "Plank Golem",
-  "item.minecraft_legends.plank_golem_spawn_egg": "Plank Golem Spawn Egg",
-  "entity.minecraft_legends.grindstone_golem": "Grindstone Golem",
-  "item.minecraft_legends.grindstone_golem_spawn_egg": "Grindstone Golem Spawn Egg",
-  "entity.minecraft_legends.mossy_golem": "Mossy Golem",
-  "item.minecraft_legends.mossy_golem_spawn_egg": "Mossy Golem Spawn Egg",
+  "entity.ancient_ancestors.test": "test",
+  "item.ancient_ancestors.test": "test",
 
-  "itemGroup.minecraft_legends.minecraft_legends": "Minecraft Legends"
+  "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }
