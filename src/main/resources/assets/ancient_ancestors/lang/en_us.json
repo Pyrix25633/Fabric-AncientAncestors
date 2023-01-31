@@ -1,6 +1,4 @@
 {
-  "entity.ancient_ancestors.test": "test",
-  "item.ancient_ancestors.test": "test",
-
+  "block.ancient_ancestors.ancient_grass": "Ancient Grass",
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }
