@@ -1,6 +1,7 @@
 package net.rupyber_studios.ancient_ancestors;
 
 import net.fabricmc.api.ModInitializer;
+import net.rupyber_studios.ancient_ancestors.block.ModBlocks;
 import net.rupyber_studios.ancient_ancestors.item.ModItems;
 import net.rupyber_studios.ancient_ancestors.util.ModRegistries;
 import net.rupyber_studios.ancient_ancestors.world.dimenson.ModDimensions;
@@ -21,6 +22,8 @@ public class AncientAncestors implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+		ModBlocks.registerModBlocks();
 
 		ModItems.registerModItems();
 

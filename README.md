@@ -6,7 +6,7 @@ This is a Fabric and Quilt mod to add a new ancient dimension to Minecraft!
 
 ## Visit our [Website](https://rupyberstudios.github.io/website/)!
 
-![Minecraft Legends Mod Logo](https://raw.githubusercontent.com/RupyberStudios/website/main/img/ancient_ancestors_mod_logo_small.png)
+![Ancient Ancestors](https://raw.githubusercontent.com/RupyberStudios/website/main/img/ancient_ancestors_mod_logo_small.png)
 ![requires Fabric API](https://i.imgur.com/HabVZJR.png)
 
 ## [Installation](https://rupyberstudios.github.io/website/pages/installation)

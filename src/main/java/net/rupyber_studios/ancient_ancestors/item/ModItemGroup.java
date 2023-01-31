@@ -5,8 +5,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.ancient_ancestors.AncientAncestors;
+import net.rupyber_studios.ancient_ancestors.block.ModBlocks;
 
 public class ModItemGroup {
-    //public static final ItemGroup ANCIENT_ANCESTORS = FabricItemGroupBuilder.build(new Identifier(AncientAncestors.MOD_ID,
-    //        "minecraft_legends"), () -> new ItemStack());
+    public static final ItemGroup ANCIENT_ANCESTORS = FabricItemGroupBuilder.build(new Identifier(AncientAncestors.MOD_ID,
+            "minecraft_legends"), () -> new ItemStack(ModBlocks.ANCIENT_GRASS));
 }
