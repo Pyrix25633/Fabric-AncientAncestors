@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancient_ancestors:block/ancient_grass_block"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_grass_block",
+        "y": 90
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_grass_block",
+        "y": 180
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_grass_block",
+        "y": 270
+      }
+    ]
+  }
+}
