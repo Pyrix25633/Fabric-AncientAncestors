@@ -1,5 +1,8 @@
 {
   "block.ancient_ancestors.ancient_grass_block": "Ancient Grass Block",
   "block.ancient_ancestors.ancient_dirt": "Ancient Dirt",
+  "block.ancient_ancestors.ancient_stone": "Ancient Stone",
+  "block.ancient_ancestors.ancient_clay": "Ancient Clay",
+
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }

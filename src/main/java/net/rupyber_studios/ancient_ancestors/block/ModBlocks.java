@@ -19,6 +19,10 @@ public class ModBlocks {
             new AncientGrassBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.6F).sounds(BlockSoundGroup.GRASS)));
     public static final Block ANCIENT_DIRT = registerBlock("ancient_dirt",
             new Block(AbstractBlock.Settings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL)));
+    public static final Block ANCIENT_STONE = registerBlock("ancient_stone",
+            new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).strength(1.5F, 6.0F)));
+    public static final Block ANCIENT_CLAY = registerBlock("ancient_clay",
+            new Block(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT).strength(0.6F).sounds(BlockSoundGroup.GRAVEL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block, ModItemGroup.ANCIENT_ANCESTORS);

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancient_ancestors:block/ancient_stone"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_stone_mirrored"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_stone",
+        "y": 180
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_stone_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}
