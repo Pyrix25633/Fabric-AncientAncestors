@@ -4,5 +4,10 @@
   "block.ancient_ancestors.ancient_stone": "Ancient Stone",
   "block.ancient_ancestors.ancient_clay": "Ancient Clay",
 
+  "block.ancient_ancestors.ancientbark_log": "Ancientbark Log",
+  "block.ancient_ancestors.ancientbark_wood": "Ancientbark Wood",
+  "block.ancient_ancestors.stripped_ancientbark_log": "Stripped Ancientbark Log",
+  "block.ancient_ancestors.stripped_ancientbark_wood": "Stripped Ancientbark Wood",
+
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }

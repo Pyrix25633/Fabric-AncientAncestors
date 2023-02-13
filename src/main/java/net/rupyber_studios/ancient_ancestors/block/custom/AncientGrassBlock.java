@@ -1,10 +1,11 @@
-package net.rupyber_studios.ancient_ancestors.block;
+package net.rupyber_studios.ancient_ancestors.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldView;
+import net.rupyber_studios.ancient_ancestors.block.ModBlocks;
 
 public class AncientGrassBlock extends Block {
     public AncientGrassBlock(Settings settings) {

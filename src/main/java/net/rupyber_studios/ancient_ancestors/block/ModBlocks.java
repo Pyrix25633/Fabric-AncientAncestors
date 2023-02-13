@@ -2,27 +2,55 @@ package net.rupyber_studios.ancient_ancestors.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.ancient_ancestors.AncientAncestors;
+import net.rupyber_studios.ancient_ancestors.block.custom.AncientGrassBlock;
+import net.rupyber_studios.ancient_ancestors.block.custom.ModLogBlock;
 import net.rupyber_studios.ancient_ancestors.item.ModItemGroup;
 
 public class ModBlocks {
+    //Settings
+    static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(2F, 3F).sounds(BlockSoundGroup.WOOD);
+    private static final FabricBlockSettings grassSettings = FabricBlockSettings.of(Material.REPLACEABLE_PLANT)
+            .noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS);
+
+    //Dirt
     public static final Block ANCIENT_GRASS_BLOCK = registerBlock("ancient_grass_block",
             new AncientGrassBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.6F).sounds(BlockSoundGroup.GRASS)));
     public static final Block ANCIENT_DIRT = registerBlock("ancient_dirt",
             new Block(AbstractBlock.Settings.of(Material.SOIL, MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL)));
+
+    //Stone
     public static final Block ANCIENT_STONE = registerBlock("ancient_stone",
-            new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).strength(1.5F, 6.0F)));
+            new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).strength(1.5F, 6.0F).requiresTool()));
+
+    //Clay
     public static final Block ANCIENT_CLAY = registerBlock("ancient_clay",
             new Block(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT).strength(0.6F).sounds(BlockSoundGroup.GRAVEL)));
+
+    //Logs
+    public static final Block ANCIENTBARK_LOG = registerBlock("ancientbark_log",
+            new ModLogBlock(woodSettings));
+    public static final Block ANCIENTBARK_WOOD = registerBlock("ancientbark_wood",
+            new ModLogBlock(woodSettings));
+    public static final Block STRIPPED_ANCIENTBARK_LOG = registerBlock("stripped_ancientbark_log",
+            new PillarBlock(woodSettings));
+    public static final Block STRIPPED_ANCIENTBARK_WOOD = registerBlock("stripped_ancientbark_wood",
+            new PillarBlock(woodSettings));
+
+    //Vegetation
+    /*public static final Block ANCIENT_GRASS = registerBlock("ancient_grass",
+            new FernBlock(grassSettings));
+    public static final Block CORAL_GRASS = registerBlock("coral_grass",
+            new FernBlock(grassSettings));
+    public static final Block TALL_CORAL_GRASS = registerBlock("tall_coral_grass",
+            new TallPlantBlock(grassSettings));*/
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block, ModItemGroup.ANCIENT_ANCESTORS);

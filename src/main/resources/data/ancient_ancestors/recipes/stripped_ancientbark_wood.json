@@ -1,0 +1,17 @@
+{
+  "group": "bark",
+  "key": {
+    "#": {
+      "item": "ancient_ancestors:stripped_ancientbark_log"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "ancient_ancestors:stripped_ancientbark_wood"
+  },
+  "type": "minecraft:crafting_shaped"
+}
