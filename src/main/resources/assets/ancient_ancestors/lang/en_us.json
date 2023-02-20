@@ -9,5 +9,15 @@
   "block.ancient_ancestors.stripped_ancientbark_log": "Stripped Ancientbark Log",
   "block.ancient_ancestors.stripped_ancientbark_wood": "Stripped Ancientbark Wood",
 
+  "block.ancient_ancestors.ancientbark_planks": "Ancientbark Planks",
+  "block.ancient_ancestors.ancientbark_slab": "Ancientbark Slab",
+  "block.ancient_ancestors.ancientbark_stairs": "Ancientbark Stairs",
+  "block.ancient_ancestors.ancientbark_vertical_slab": "Ancientbark Vertical Slab",
+  "block.ancient_ancestors.ancientbark_button": "Ancientbark Button",
+  "block.ancient_ancestors.ancientbark_pressure_plate": "Ancientbark Pressure Plate",
+  "block.ancient_ancestors.ancientbark_fence": "Ancientbark Fence",
+  "block.ancient_ancestors.ancientbark_fence_gate": "Ancientbark Fence Gate",
+  "block.ancient_ancestors.ancientbark_leaves": "Ancientbark Leaves",
+
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }

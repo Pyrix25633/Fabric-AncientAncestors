@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancient_ancestors:block/ancientbark_slab"
+    },
+    "type=double": {
+      "model": "ancient_ancestors:block/ancientbark_planks"
+    },
+    "type=top": {
+      "model": "ancient_ancestors:block/ancientbark_slab_top"
+    }
+  }
+}

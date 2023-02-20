@@ -1,0 +1,12 @@
+{
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "ancient_ancestors:ancientbark_planks"
+    }
+  ],
+  "result": {
+    "item": "ancient_ancestors:ancientbark_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

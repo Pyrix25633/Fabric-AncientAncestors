@@ -4,6 +4,16 @@
     "ancient_ancestors:ancientbark_log",
     "ancient_ancestors:ancientbark_wood",
     "ancient_ancestors:stripped_ancientbark_log",
-    "ancient_ancestors:stripped_ancientbark_wood"
+    "ancient_ancestors:stripped_ancientbark_wood",
+
+    "ancient_ancestors:ancientbark_planks",
+    "ancient_ancestors:ancientbark_slab",
+    "ancient_ancestors:ancientbark_stairs",
+    "ancient_ancestors:ancientbark_vertical_slab",
+    "ancient_ancestors:ancientbark_button",
+    "ancient_ancestors:ancientbark_pressure_plate",
+    "ancient_ancestors:ancientbark_fence",
+    "ancient_ancestors:ancientbark_fence_gate",
+    "ancient_ancestors:ancientbark_leaves"
   ]
 }

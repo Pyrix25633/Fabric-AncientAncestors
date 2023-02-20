@@ -11,7 +11,9 @@ import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.ancient_ancestors.AncientAncestors;
 import net.rupyber_studios.ancient_ancestors.block.custom.AncientGrassBlock;
 import net.rupyber_studios.ancient_ancestors.block.custom.ModLogBlock;
+import net.rupyber_studios.ancient_ancestors.block.custom.VerticalSlabBlock;
 import net.rupyber_studios.ancient_ancestors.item.ModItemGroup;
+import net.rupyber_studios.ancient_ancestors.util.MinecraftBlocks;
 
 public class ModBlocks {
     //Settings
@@ -19,6 +21,15 @@ public class ModBlocks {
             .strength(2F, 3F).sounds(BlockSoundGroup.WOOD);
     private static final FabricBlockSettings grassSettings = FabricBlockSettings.of(Material.REPLACEABLE_PLANT)
             .noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS);
+    static final FabricBlockSettings leavesSettings = FabricBlockSettings.of(Material.LEAVES).strength(0.2F)
+            .sounds(BlockSoundGroup.GRASS).nonOpaque().ticksRandomly().allowsSpawning(MinecraftBlocks::canSpawnOnLeaves)
+            .suffocates(MinecraftBlocks::never).blockVision(MinecraftBlocks::never);
+    static final FabricBlockSettings buttonSettings = FabricBlockSettings.of(Material.DECORATION)
+            .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
+            .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings fenceSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
 
     //Dirt
     public static final Block ANCIENT_GRASS_BLOCK = registerBlock("ancient_grass_block",
@@ -43,6 +54,26 @@ public class ModBlocks {
             new PillarBlock(woodSettings));
     public static final Block STRIPPED_ANCIENTBARK_WOOD = registerBlock("stripped_ancientbark_wood",
             new PillarBlock(woodSettings));
+
+    //Planks
+    public static final Block ANCIENTBARK_PLANKS = registerBlock("ancientbark_planks",
+            new Block(woodSettings));
+    public static final Block ANCIENTBARK_SLAB = registerBlock("ancientbark_slab",
+            new SlabBlock(woodSettings));
+    public static final Block ANCIENTBARK_STAIRS = registerBlock("ancientbark_stairs",
+            new StairsBlock(ModBlocks.ANCIENTBARK_PLANKS.getDefaultState(), woodSettings));
+    public static final Block ANCIENTBARK_VERTICAL_SLAB = registerBlock("ancientbark_vertical_slab",
+            new VerticalSlabBlock(woodSettings));
+    public static final Block ANCIENTBARK_BUTTON = registerBlock("ancientbark_button",
+            new WoodenButtonBlock(buttonSettings));
+    public static final Block ANCIENTBARK_PRESSURE_PLATE = registerBlock("ancientbark_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, pressurePlateSettings));
+    public static final Block ANCIENTBARK_FENCE = registerBlock("ancientbark_fence",
+            new FenceBlock(fenceSettings));
+    public static final Block ANCIENTBARK_FENCE_GATE = registerBlock("ancientbark_fence_gate",
+            new FenceGateBlock(fenceSettings));
+    public static final Block ANCIENTBARK_LEAVES = registerBlock("ancientbark_leaves",
+            new LeavesBlock(leavesSettings));
 
     //Vegetation
     /*public static final Block ANCIENT_GRASS = registerBlock("ancient_grass",

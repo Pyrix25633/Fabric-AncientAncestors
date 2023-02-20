@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "ancient_ancestors:block/ancientbark_planks"
+  }
+}

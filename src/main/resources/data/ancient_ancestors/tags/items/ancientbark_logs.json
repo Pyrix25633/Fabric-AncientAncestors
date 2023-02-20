@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ancient_ancestors:ancientbark_log",
+    "ancient_ancestors:ancientbark_wood",
+    "ancient_ancestors:stripped_ancientbark_log",
+    "ancient_ancestors:stripped_ancientbark_wood"
+  ]
+}
