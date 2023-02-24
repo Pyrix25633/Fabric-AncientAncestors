@@ -25,6 +25,8 @@ public class AncientAncestorsClient implements ClientModInitializer {
 
 		ModBlocks.registerModBlocks();
 
+		ModRegistries.cutoutBlocks();
+
 		ModItems.registerModItems();
 
 		GeckoLib.initialize();

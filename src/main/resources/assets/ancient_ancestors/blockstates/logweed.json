@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ancient_ancestors:block/logweed_bottom"
+    },
+    "half=upper": {
+      "model": "ancient_ancestors:block/logweed_top"
+    }
+  }
+}

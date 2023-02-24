@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ancient_ancestors:block/tall_coral_grass_bottom"
+    },
+    "half=upper": {
+      "model": "ancient_ancestors:block/tall_coral_grass_top"
+    }
+  }
+}

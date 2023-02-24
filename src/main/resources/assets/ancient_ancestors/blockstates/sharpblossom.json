@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ancient_ancestors:block/sharpblossom_bottom"
+    },
+    "half=upper": {
+      "model": "ancient_ancestors:block/sharpblossom_top"
+    }
+  }
+}

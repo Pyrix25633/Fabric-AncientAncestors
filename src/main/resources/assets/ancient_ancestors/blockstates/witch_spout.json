@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ancient_ancestors:block/witch_spout_bottom"
+    },
+    "half=upper": {
+      "model": "ancient_ancestors:block/witch_spout_top"
+    }
+  }
+}

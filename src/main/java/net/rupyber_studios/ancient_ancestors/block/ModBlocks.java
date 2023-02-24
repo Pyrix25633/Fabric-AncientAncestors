@@ -76,12 +76,18 @@ public class ModBlocks {
             new LeavesBlock(leavesSettings));
 
     //Vegetation
-    /*public static final Block ANCIENT_GRASS = registerBlock("ancient_grass",
+    public static final Block ANCIENT_GRASS = registerBlock("ancient_grass",
             new FernBlock(grassSettings));
     public static final Block CORAL_GRASS = registerBlock("coral_grass",
             new FernBlock(grassSettings));
     public static final Block TALL_CORAL_GRASS = registerBlock("tall_coral_grass",
-            new TallPlantBlock(grassSettings));*/
+            new TallPlantBlock(grassSettings));
+    public static final Block LOGWEED = registerBlock("logweed",
+            new TallPlantBlock(grassSettings));
+    public static final Block WITCH_SPOUT = registerBlock("witch_spout",
+            new TallPlantBlock(grassSettings));
+    public static final Block SHARPBLOSSOM = registerBlock("sharpblossom",
+            new TallFlowerBlock(grassSettings));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block, ModItemGroup.ANCIENT_ANCESTORS);

@@ -19,5 +19,12 @@
   "block.ancient_ancestors.ancientbark_fence_gate": "Ancientbark Fence Gate",
   "block.ancient_ancestors.ancientbark_leaves": "Ancientbark Leaves",
 
+  "block.ancient_ancestors.ancient_grass": "Ancient Grass",
+  "block.ancient_ancestors.coral_grass": "Coral Grass",
+  "block.ancient_ancestors.tall_coral_grass": "Tall Coral Grass",
+  "block.ancient_ancestors.logweed": "Logweed",
+  "block.ancient_ancestors.witch_spout": "Witch Spout",
+  "block.ancient_ancestors.sharpblossom": "Sharpblossom",
+
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }
