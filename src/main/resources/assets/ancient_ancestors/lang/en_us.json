@@ -26,5 +26,12 @@
   "block.ancient_ancestors.witch_spout": "Witch Spout",
   "block.ancient_ancestors.sharpblossom": "Sharpblossom",
 
+  "block.ancient_ancestors.blazeblossom": "Blazeblossom",
+  "block.ancient_ancestors.glowberry_bush": "Glowberry Bush",
+  "block.ancient_ancestors.ironvine": "Ironvine",
+  "block.ancient_ancestors.ancient_flower": "Ancient Flower",
+  "block.ancient_ancestors.ancient_flower_pot": "Ancient Flower Pot",
+  "block.ancient_ancestors.potted_ancient_flower": "Potted Ancient Flower",
+
   "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
 }

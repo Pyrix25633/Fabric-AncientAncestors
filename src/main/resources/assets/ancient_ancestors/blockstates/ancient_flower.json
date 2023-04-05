@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancient_ancestors:block/ancient_flower_1"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_2"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_3"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_4"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_5"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_6"
+      },
+      {
+        "model": "ancient_ancestors:block/ancient_flower_7"
+      }
+    ]
+  }
+}

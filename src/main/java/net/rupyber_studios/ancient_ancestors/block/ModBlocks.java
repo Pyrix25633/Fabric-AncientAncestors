@@ -3,33 +3,35 @@ package net.rupyber_studios.ancient_ancestors.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.ancient_ancestors.AncientAncestors;
-import net.rupyber_studios.ancient_ancestors.block.custom.AncientGrassBlock;
-import net.rupyber_studios.ancient_ancestors.block.custom.ModLogBlock;
-import net.rupyber_studios.ancient_ancestors.block.custom.VerticalSlabBlock;
+import net.rupyber_studios.ancient_ancestors.block.custom.*;
 import net.rupyber_studios.ancient_ancestors.item.ModItemGroup;
 import net.rupyber_studios.ancient_ancestors.util.MinecraftBlocks;
 
 public class ModBlocks {
     //Settings
-    static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
+    private static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(2F, 3F).sounds(BlockSoundGroup.WOOD);
     private static final FabricBlockSettings grassSettings = FabricBlockSettings.of(Material.REPLACEABLE_PLANT)
             .noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS);
-    static final FabricBlockSettings leavesSettings = FabricBlockSettings.of(Material.LEAVES).strength(0.2F)
+    private static final FabricBlockSettings leavesSettings = FabricBlockSettings.of(Material.LEAVES).strength(0.2F)
             .sounds(BlockSoundGroup.GRASS).nonOpaque().ticksRandomly().allowsSpawning(MinecraftBlocks::canSpawnOnLeaves)
             .suffocates(MinecraftBlocks::never).blockVision(MinecraftBlocks::never);
-    static final FabricBlockSettings buttonSettings = FabricBlockSettings.of(Material.DECORATION)
+    private static final FabricBlockSettings buttonSettings = FabricBlockSettings.of(Material.DECORATION)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
-    static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
+    private static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
-    static final FabricBlockSettings fenceSettings = FabricBlockSettings.of(Material.WOOD)
+    private static final FabricBlockSettings fenceSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
+    private static final FabricBlockSettings flowerSettings = (FabricBlockSettings)FabricBlockSettings.of(Material.PLANT).noCollision()
+            .breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ);
+    private static final FabricBlockSettings flowerPotSettings = FabricBlockSettings.of(Material.DECORATION).breakInstantly().nonOpaque();
 
     //Dirt
     public static final Block ANCIENT_GRASS_BLOCK = registerBlock("ancient_grass_block",
@@ -88,6 +90,24 @@ public class ModBlocks {
             new TallPlantBlock(grassSettings));
     public static final Block SHARPBLOSSOM = registerBlock("sharpblossom",
             new TallFlowerBlock(grassSettings));
+
+    //Small Flowers and Flower Pots
+    public static final Block BLAZEBLOSSOM = registerBlock("blazeblossom",
+            new ModFlowerBlock(StatusEffects.FIRE_RESISTANCE, 6, flowerSettings));
+    public static final Block GLOWBERRY_BUSH = registerBlock("glowberry_bush",
+            new ModFlowerBlock(StatusEffects.FIRE_RESISTANCE, 6, flowerSettings));
+    public static final Block IRONVINE = registerBlock("ironvine",
+            new ModFlowerBlock(StatusEffects.NIGHT_VISION, 8, flowerSettings));
+    public static final Block ANCIENT_FLOWER = registerBlock("ancient_flower",
+            new AncientFlowerBlock(StatusEffects.NIGHT_VISION, 8, flowerSettings));
+    public static final Block ANCIENT_FLOWER_POT = registerBlock("ancient_flower_pot",
+            new AncientFlowerPotBlock(Blocks.AIR, flowerPotSettings));
+    public static final Block POTTED_ANCIENT_FLOWER = registerBlockOnly("potted_ancient_flower",
+            new AncientFlowerPotBlock(ANCIENT_FLOWER, flowerPotSettings));
+
+    private static Block registerBlockOnly(String name, Block block) {
+        return Registry.register(Registry.BLOCK, new Identifier(AncientAncestors.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block, ModItemGroup.ANCIENT_ANCESTORS);

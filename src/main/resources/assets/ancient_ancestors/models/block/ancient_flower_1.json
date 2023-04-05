@@ -1,0 +1,6 @@
+{
+  "parent": "ancient_ancestors:block/ancient_flower",
+  "textures": {
+    "flower": "ancient_ancestors:block/ancient_flower_1"
+  }
+}

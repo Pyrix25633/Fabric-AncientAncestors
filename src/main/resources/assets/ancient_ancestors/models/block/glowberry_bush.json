@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ancient_ancestors:block/glowberry_bush"
+  }
+}
