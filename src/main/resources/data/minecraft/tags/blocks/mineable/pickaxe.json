@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ancient_ancestors:pendium",
     "ancient_ancestors:ancient_stone"
   ]
 }

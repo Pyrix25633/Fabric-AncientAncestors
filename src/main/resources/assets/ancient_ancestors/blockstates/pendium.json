@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=true": {
+      "model": "ancient_ancestors:block/pendium_active"
+    },
+    "active=false": {
+      "model": "ancient_ancestors:block/pendium"
+    }
+  }
+}

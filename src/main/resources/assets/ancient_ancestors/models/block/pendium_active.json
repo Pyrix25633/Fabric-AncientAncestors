@@ -1,0 +1,7 @@
+{
+	"parent": "ancient_ancestors:block/pendium",
+	"textures": {
+		"0": "ancient_ancestors:block/pendium_active",
+		"particle": "ancient_ancestors:block/pendium_active"
+	}
+}
