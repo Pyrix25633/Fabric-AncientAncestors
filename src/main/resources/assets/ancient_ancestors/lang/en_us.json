@@ -37,5 +37,7 @@
   "block.ancient_ancestors.ancient_flower_pot": "Ancient Flower Pot",
   "block.ancient_ancestors.potted_ancient_flower": "Potted Ancient Flower",
 
-  "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors"
+  "itemGroup.ancient_ancestors.ancient_ancestors": "Ancient Ancestors",
+
+  "entity.ancient_ancestors.flapper": "Flapper"
 }

@@ -1,8 +1,13 @@
 package net.rupyber_studios.ancient_ancestors.util;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.ancient_ancestors.block.ModBlocks;
+import net.rupyber_studios.ancient_ancestors.entity.ModEntities;
+import net.rupyber_studios.ancient_ancestors.entity.client.FlapperRenderer;
+import net.rupyber_studios.ancient_ancestors.entity.custom.FlapperEntity;
 
 public class ModRegistries {
     public static void cutoutBlocks() {
@@ -20,10 +25,10 @@ public class ModRegistries {
     }
 
     public static void registerAttributes() {
-        //FabricDefaultAttributeRegistry.register(ModEntities.Test, Test.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.FLAPPER, FlapperEntity.setAttributes());
     }
 
     public static void registerRenderers() {
-        //EntityRendererRegistry.register(ModEntities.Test, TestRenderer::new);
+        EntityRendererRegistry.register(ModEntities.FLAPPER, FlapperRenderer::new);
     }
 }
